@@ -30,7 +30,7 @@ From my tests, using MessagePack in itself is slower than JSON when it comes to 
 
 Turborooms' Object used to maintain rooms and their clients. Structure:
 
-```{Roomname: [Spark1, Spark2, ...]}```
+```{Roomname: [Spark_id1, Spark_id2, ...]}```
 
 #### Spark.join(roomname)
 
