@@ -1,6 +1,6 @@
 {
   "name": "primus-turborooms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic rooms extension for Primus with focus on Performance / Efficiency",
   "main": "index.js",
   "scripts": {
