@@ -1,0 +1,24 @@
+{
+  "name": "primus-turborooms",
+  "version": "1.0.0",
+  "description": "Basic rooms extension for Primus with focus on Performance / Efficiency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "primus",
+    "rooms",
+    "uws",
+    "fast",
+    "channels",
+    "realtime",
+    "plugin"
+  ],
+  "author": "Kinsi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Kinsi55/node_primus-turborooms.git"
+  }
+}
