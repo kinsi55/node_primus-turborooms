@@ -69,11 +69,18 @@ exports.server = function(primus, options) {
 			if(uwsTransformer)
 				packet = primus.transformer.service.prepareMessage(packet, Buffer.isBuffer(packet) ? OPCODE_BINARY : OPCODE_TEXT);
 
+			let sentTo = {};
+
 			rooms.forEach((sparks) => {
 				if(!primus.rooms[sparks])
 					return;
 
 				primus.rooms[sparks].forEach((spark) => {
+					if(sentTo[spark])
+						return;
+
+					sentTo[spark] = true;
+
 					spark = primus.connections[spark];
 
 					if(!spark || /*Spark.CLOSED*/2 === spark.readyState)
